@@ -3,7 +3,7 @@ import unittest
 import flatbuffers
 import numpy as np
 
-import graphpipe
+from graphpipe import convert
 
 
 metadata = {
@@ -33,29 +33,29 @@ class TestSimple(unittest.TestCase):
 
         def toot():
             """Stupid test function"""
-            graphpipe.make_tensor(b, t)
+            convert.make_tensor(b, t)
 
         toot()
-        graphpipe.save_tensor(np.array([b"foo", "b"]), "strings.dat")
-        foo = graphpipe.load_tensor("strings.dat")
+        convert.save_tensor(np.array([b"foo", "b"]), "strings.dat")
+        foo = convert.load_tensor("strings.dat")
         print(foo)
-        graphpipe.save_tensor(np.identity(3), "floats.dat")
-        bar = graphpipe.load_tensor("floats.dat")
+        convert.save_tensor(np.identity(3), "floats.dat")
+        bar = convert.load_tensor("floats.dat")
         print(bar)
         i = ["some", "other"]
         o = ["third", "fourth"]
-        ir = graphpipe.InferReq("conf", [foo, bar], i, o)
-        graphpipe.save_request(ir, "inferreq.dat")
-        x = graphpipe.load_request("inferreq.dat")
+        ir = convert.InferReq("conf", [foo, bar], i, o)
+        convert.save_request(ir, "inferreq.dat")
+        x = convert.load_request("inferreq.dat")
         print(x)
-        graphpipe.save_request(None, "metadatareq.dat")
-        x = graphpipe.load_request("metadatareq.dat")
+        convert.save_request(None, "metadatareq.dat")
+        x = convert.load_request("metadatareq.dat")
         print(x)
-        graphpipe.save_infer_response([foo, bar], None, "inferresp.dat")
-        x = graphpipe.load_infer_response("inferresp.dat")
+        convert.save_infer_response([foo, bar], None, "inferresp.dat")
+        x = convert.load_infer_response("inferresp.dat")
         print(x)
-        graphpipe.save_metadata_response(metadata, "metadataresp.dat")
-        x = graphpipe.load_metadata_response("metadataresp.dat")
+        convert.save_metadata_response(metadata, "metadataresp.dat")
+        x = convert.load_metadata_response("metadataresp.dat")
 
 if __name__ == '__main__':
     unittest.main()
