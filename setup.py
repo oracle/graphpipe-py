@@ -10,11 +10,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name='graphpipe',
-    version='0.0.1',
+    version='1.0.0',
     description='Graphpipe client and helpers',
     long_description=long_description,
     author='OCI ML Team',
-    author_email='internal@oracle.com',
+    author_email='vish.ishaya@oracle.com',
     classifier=[
         'Intended Audience :: Information Technology',
         'Intended Audience :: System Administrators',

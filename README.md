@@ -1,16 +1,19 @@
-# graphpipe for python - wow!
+# GraphPipe for python 
 
-graphpipe for python consists of the flatbuffer implementation (generated
-from the graphpipe project [LINK]), utilities for converting between them
-and other python types, and a client for making calls to graphpipe services.
+GraphPipe for python consists of the flatbuffer implementation (generated from
+the [graphpipe project](https://github.com/graphpipe)), utilities for
+converting between flatbuffers and python types, a client for making calls
+to graphpipe services, and some simple examples.
 
 ## Build
 
 This is a pure python package, your setup.py knowledge should do the trick
 if you haven't already installed this from pypi with pip
 
+You an also install directly from github with pip like so:
+
 ```
-  (hint: pip install graphpipe)
+  pip install git+https://github.com/oracle/graphpipe-py
 ```
 
 ## Develop
