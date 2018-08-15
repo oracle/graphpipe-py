@@ -5,6 +5,8 @@ the [graphpipe project](https://github.com/graphpipe)), utilities for
 converting between flatbuffers and python types, a client for making calls
 to graphpipe services, and some simple examples.
 
+To learn more about GraphPipe, see our [documentation](https://oracle.github.io/graphpipe/)
+
 ## Build
 
 You can install from pypi like so:
@@ -33,4 +35,6 @@ the graphpipe project and copy the generated files into this repository's
 
 To build installation packages:
 
+```
     python setup.py sdist bdist_wheel
+```
