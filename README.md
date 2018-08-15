@@ -7,14 +7,20 @@ to graphpipe services, and some simple examples.
 
 ## Build
 
-This is a pure python package, your setup.py knowledge should do the trick
-if you haven't already installed this from pypi with pip
+You can install from pypi like so:
+
+```
+  pip install graphpipe
+```
 
 You an also install directly from github with pip like so:
 
 ```
   pip install git+https://github.com/oracle/graphpipe-py
 ```
+
+This is a pure python package, your setup.py knowledge should do the trick
+if you are have checked out the code from github.
 
 ## Develop
 
