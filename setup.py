@@ -13,13 +13,14 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='graphpipe',
-    version='1.0.1',
+    version='1.0.2',
     description='Graphpipe client and helpers',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='OCI ML Team',
     install_requires=requirements,
     author_email='vish.ishaya@oracle.com',
+    url='https://oracle.github.io/graphpipe',
     classifier=[
         'Intended Audience :: Information Technology',
         'Intended Audience :: System Administrators',
