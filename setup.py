@@ -13,7 +13,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='graphpipe',
-    version='1.0.3',
+    version='1.0.4',
     description='Graphpipe client and helpers',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -26,7 +26,6 @@ setuptools.setup(
         'Intended Audience :: System Administrators',
         'Operating System :: POSIX :: Linux',
         'License :: OSI Approved :: Universal Permissive License (UPL)',
-        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
