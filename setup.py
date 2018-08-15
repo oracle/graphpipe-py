@@ -13,7 +13,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='graphpipe',
-    version='1.0.2',
+    version='1.0.3',
     description='Graphpipe client and helpers',
     long_description=long_description,
     long_description_content_type="text/markdown",
