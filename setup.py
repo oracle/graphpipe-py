@@ -7,6 +7,9 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
         long_description = f.read()
 
+requirements = None
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 
 setuptools.setup(
     name='graphpipe',
@@ -14,6 +17,7 @@ setuptools.setup(
     description='Graphpipe client and helpers',
     long_description=long_description,
     author='OCI ML Team',
+    install_requires=requirements,
     author_email='vish.ishaya@oracle.com',
     classifier=[
         'Intended Audience :: Information Technology',
